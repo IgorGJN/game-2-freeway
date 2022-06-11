@@ -22,7 +22,7 @@ function movimentaAtor(){
 
 function verificaColisao(){
   for (let i = 0; i < imagemCarros.length; i++){
-    colisao = collideRectCircle(xCarros[i], yCarros[i], comprimentoCarro, alturaCarro, xAtor, yAtor, 15)
+    colisao = collideRectRect(xCarros[i], yCarros[i], comprimentoCarro, alturaCarro, xAtor, yAtor, 25, 25)
       if (colisao){
         voltaAtorParaPosicaoInicial();
         somColisao.play();
